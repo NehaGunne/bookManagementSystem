@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/884bb7a801.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+    <div class="cont">
+        <div id="homeCont" class="text-center">
+            <h1 class="book_head m-3">Book Management System</h1>
+            <a href="#" class="links" id="bookList">Books List</a>
+            <a href="#" class="links" id="getSearchPage">Search</a>
+            <a href="#" class="links" id="addPage">Add Book</a>
+
+        </div>
+
+        <div id="searchCont" class="text-center d-none">
+            <h1 class="book_head m-3">Book Management System</h1>
+
+
+
+            <div id="search" class="d-flex flex-row justify-content-center p-3">
+                <div>
+                    <select id="select" class="form-control">
+                        <option value="empty">Select</option>
+                        <option value="name">Search by Book Name</option>
+                        <option value="author">Search by Author</option>
+                        <option value="rating">Search by Rating</option>
+                        <option value="price">Search by Price</option>
+                    </select>
+                </div>
+            </div>
+            <div id="otherThanPrice">
+                <div class="d-flex flex-row justify-content-center p-3">
+                    <div>
+                        <input id="searchInput" type="text" placeholder="" class="form-control">
+                    </div>
+    
+    
+                </div>
+            </div>
+            <div id="price" class="d-none">
+                <div class="d-flex flex-row justify-content-center p-3">
+                    <input id="priceMin" type="number" placeholder="Enter min price" class="form-control price">
+                    <input id="priceMax" type="number" placeholder="Enter max price" class="form-control price">
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <button id="searchBtn" class="btn btn-primary m-2">Search</button>
+                <button id="searchBack" class="btn btn-primary m-2">Back</button>
+            </div>
+
+
+        </div>
+        <div id="addCont" class="text-center d-none">
+            <h1 class="book_head m-3">Book Management System</h1>
+            <div class="d-flex flex-row justify-content-center p-3">
+                <div>
+
+                    <input id="bookName" type="text" placeholder="Enter Book Name" class="form-control">
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center p-3">
+                <div>
+                    <input id="bookAuthor" type="text" placeholder="Enter Book Author Name" class="form-control">
+                </div>
+
+            </div>
+            <div class="d-flex flex-row justify-content-center p-3">
+                <div>
+                    <input id="bookRating" type="number" placeholder="Enter Book Rating" class="form-control">
+                </div>
+
+            </div>
+            <div class="d-flex flex-row justify-content-center p-3">
+
+                <div>
+                    <input id="bookPrice" type="number" placeholder="Enter Book Price" class="form-control">
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center p-3">
+                <div>
+                    <input id="bookId" type="number" placeholder="Enter Book id" class="form-control">
+                </div>
+            </div>
+
+
+
+
+            <div class="text-center">
+                <button id="addBtn" class="btn btn-primary m-2">Add</button>
+                <button id="addBack" class="btn btn-primary m-2">Back</button>
+                <p class="text d-none" id="msg">Book Added Succesfully
+                    <i class="fas fa-check-circle"></i>
+                </p>
+            </div>
+        </div>
+        <div id="table1" class="d-none">
+            <div class="d-flex flex-row justify-content-center p-5 mt-3">
+                <table id="table2">
+                    <th>name</th>
+                    <th>author</th>
+                    <th>Rating</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                    <tbody id="tbody" class=""></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="/main.c39d6dcf.js"></script>
+</div></body>
+
+</html>
